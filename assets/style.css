@@ -1,0 +1,51 @@
+:root {
+    --main-color: rgb(116, 116, 180);
+    --gradient: linear-gradient(maroon,orange)
+}
+
+h1 {
+    text-align: left;
+    font-size: 5rem;
+    margin: 4rem auto 1rem 3rem; 
+    font-family: "Brush Script MT", sans-serif;
+    font-weight: lighter;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.75rem;
+    border-color: black;
+    border-style: solid;
+    border-width: .08rem;
+}
+
+section {
+    /*background-color:*/
+    background-image: var(--gradient);
+    margin: auto;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.main-card {
+    background-color: yellow;
+    max-width: 75%;
+    margin: 2.5rem;
+}
+
+.center {
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 480px) {
+    main {
+      flex-direction: column;
+    }}
+
+@media screen and (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }}
