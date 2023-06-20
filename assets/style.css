@@ -3,34 +3,28 @@
     --gradient: linear-gradient(maroon,orange)
 }
 
-h1 {
-    text-align: left;
-    font-size: 5rem;
-    margin: 4rem auto 1rem 3rem; 
+header {
+    justify-content: left;
+    text-align: top;
+    font-size: 2rem;
     font-family: "Brush Script MT", sans-serif;
     font-weight: lighter;
-}
-
-h2 {
-    text-align: center;
-    font-size: 2.75rem;
-    border-color: black;
-    border-style: solid;
-    border-width: .08rem;
+    padding-top: .2rem;
+    padding-left: 1.5rem;
+    margin-bottom: 0rem;
 }
 
 section {
-    /*background-color:*/
-    background-image: var(--gradient);
-    margin: auto;
-    padding-top: 2.5rem;
-    padding-bottom: 1rem;
+    background-color: green;
+    min-width: 100%;
 }
 
 .main-card {
-    background-color: yellow;
-    max-width: 75%;
-    margin: 2.5rem;
+    max-width: 100%;
+    width: 55rem;
+    justify-content: center;
+    text-align: center;
+    margin-top: -1.5rem;
 }
 
 .center {
@@ -40,9 +34,53 @@ section {
     padding-bottom: 2.5rem;
 }
 
+img {
+    max-width: 100%;
+}
+
+.cards {
+    display: inline-flex;
+    width: 26.83rem;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+   }
+
+.box {
+    background-color: green;
+    border-color: black;
+    border-style: solid;
+    border-width: .08rem; 
+    margin-left: 1rem;
+}
+
+h2,
+h3 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.aside {
+    flex-direction: row;
+    display: flex;
+    position: fixed;
+    left: 200rem;
+    top: -41.3rem;
+    width: 20rem;
+    height: 4rem;
+    border: .08rem solid black;
+    justify-content: center;
+    background-color: green;
+    margin: auto;
+}
+
 @media screen and (max-width: 480px) {
     main {
-      flex-direction: column;
+      flex-direction: row;
     }}
 
 @media screen and (max-width: 768px) {
