@@ -3,7 +3,12 @@
     --gradient: linear-gradient(maroon,orange)
 }
 
+html {
+    background-color: lightgrey;
+}
+
 header {
+    margin: 0;
     justify-content: left;
     text-align: top;
     font-size: 2rem;
@@ -11,20 +16,32 @@ header {
     font-weight: lighter;
     padding-top: .2rem;
     padding-left: 1.5rem;
-    margin-bottom: 0rem;
 }
 
 section {
     background-color: green;
-    min-width: 100%;
+    max-width: 100%;
+}
+
+li {
+    display: inline;
+    padding: 0rem;
+    text-justify: end;
+    font-size: 65%;
+}
+
+li:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .main-card {
-    max-width: 100%;
-    width: 55rem;
+    max-width: 75%;
+    width: 100%/*55rem*/;
     justify-content: center;
     text-align: center;
     margin-top: -1.5rem;
+    margin-left: 12.5%;
 }
 
 .center {
@@ -40,10 +57,12 @@ img {
 
 .cards {
     display: inline-flex;
-    width: 26.83rem;
+    width: 50%;
     justify-content: center;
     text-align: center;
     margin-top: 1rem;
+    margin-left: 25%;
+    height: 10rem;
    }
 
 .box {
@@ -51,39 +70,75 @@ img {
     border-color: black;
     border-style: solid;
     border-width: .08rem; 
-    margin-left: 1rem;
+    /*margin-left: 1rem;*/
 }
 
 h2,
 h3 {
     font-size: 1.5rem;
     font-weight: lighter;
+    text-align: center;
 }
 
 p {
     font-size: 1rem;
+    wrap: flex;
 }
 
-.aside {
-    flex-direction: row;
-    display: flex;
-    position: fixed;
+aside {
+    display: inline-flex;
+    width: 33%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 33%;
+    height: 10rem;
+    background-color: green;
+    border-color: black;
+    border-style: solid;
+    border-width: .08rem; 
+}
+    /*box-sizing: border-box;*/
+    /*float: right;
+    display: block;
+    /*position: fixed;
     left: 200rem;
     top: -41.3rem;
-    width: 20rem;
+    width: 100%;
     height: 4rem;
-    border: .08rem solid black;
+    border-top: .08rem solid black;
+    border-bottom: .08rem solid black;
     justify-content: center;
     background-color: green;
-    margin: auto;
+    margin-top: 1rem;
+
+}*/
+
+footer {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    text-align: center;
+    display: inline-flex;
+    width: 33%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 33%;
+    height: 5rem;
+    background-color: green;
+    border-color: black;
+    border-style: solid;
+    border-width: .08rem; 
 }
 
 @media screen and (max-width: 480px) {
-    main {
-      flex-direction: row;
-    }}
+    * {
+        max-width: 100%;
+    }
+}
 
 @media screen and (max-width: 768px) {
-    main {
-      flex-direction: column;
-    }}
+    *{
+        max-width: 100%;
+    }
+}
