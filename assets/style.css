@@ -36,7 +36,7 @@ li {
 
 
 .main-card {
-    display: inline-block;
+    display: inline;
     width: 75%/*55rem*/;
     justify-content: center;
     text-align: center;
