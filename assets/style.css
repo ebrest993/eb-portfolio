@@ -23,25 +23,24 @@ section {
     max-width: 100%;
 }
 
+ul {
+    text-align: end;
+}
+
 li {
     display: inline;
     padding: 0rem;
-    text-justify: end;
     font-size: 65%;
+    padding-right: 2%;
 }
 
-li:hover {
-    color: white;
-    cursor: pointer;
-}
 
 .main-card {
-    max-width: 75%;
-    width: 100%/*55rem*/;
+    display: inline-block;
+    width: 75%/*55rem*/;
     justify-content: center;
     text-align: center;
     margin-top: -1.5rem;
-    margin-left: 12.5%;
 }
 
 .center {
@@ -71,6 +70,16 @@ img {
     border-style: solid;
     border-width: .08rem; 
     /*margin-left: 1rem;*/
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    cursor: pointer;
 }
 
 h2,
@@ -132,7 +141,8 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-    * {
+    *{
+        nav {position: relative;}
         max-width: 100%;
     }
 }
