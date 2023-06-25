@@ -91,6 +91,7 @@ h3 {
 p {
     font-size: 1rem;
     wrap: flex;
+    text-align: center;
 }
 
 aside {
