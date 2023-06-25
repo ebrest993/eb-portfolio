@@ -1,5 +1,6 @@
 :root {
-    --main-color: rgb(116, 116, 180);
+    --main-color: rgb(137, 90, 3);
+    --second-color: darkcyan;
     --gradient: linear-gradient(maroon,orange)
 }
 
@@ -17,13 +18,19 @@ header {
     padding-top: 0px;
 }
 
+.header-img {
+    width: 40%;
+    height: auto;
+}
+
 section {
-    background-color: green;
+    background-color: var(--main-color);
     max-width: 100%;
 }
 
 ul {
     text-align: center;
+    background-color: var(--second-color);
 }
 
 li {
@@ -63,8 +70,9 @@ img {
     margin-left: 25%;
     height: auto;
 }
+
 .box {
-    background-color: green;
+    background-color: var(--main-color);
     border-color: black;
     border-style: solid;
     border-width: .08rem; 
@@ -81,11 +89,15 @@ a:hover {
     cursor: pointer;
 }
 
+h1 {
+    background-color: var(--second-color);
+}
 h2,
 h3 {
     font-size: 1.5rem;
     font-weight: lighter;
     text-align: center;
+    background-color: var(--second-color);
 }
 
 p {
@@ -103,7 +115,7 @@ aside {
     /* margin-bottom: 10rem; */
     margin-left: 33%;
     height: 100%;
-    background-color: green;
+    background-color: var(--main-color);
     border-color: black;
     border-style: solid;
     border-width: .08rem; 
@@ -136,21 +148,33 @@ footer {
     /* margin-bottom: 20rem; */
     margin-left: 33%;
     height: auto;
-    background-color: green;
+    background-color: var(--main-color);
     border-color: black;
     border-style: solid;
     border-width: .08rem; 
 }
 
-@media screen and (max-width: 480px) {
-    *{
-        nav {position: relative;}
-        max-width: 100%;
-    }
-}
-
 @media screen and (max-width: 768px) {
     *{
         max-width: 100%;
+        font-size: smaller;
+        }
+    
+    img{
+        max-width: 100%;
+        height: auto;
+        }
+}
+
+@media screen and (max-width: 480px) {
+    *{
+        /* nav {position: relative;} */
+        max-width: 100%;
+        font-size: small;
     }
+
+    img{
+        max-width: 100%;
+        height: auto;
+        }
 }
