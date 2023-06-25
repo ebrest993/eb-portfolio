@@ -112,7 +112,7 @@ aside {
     justify-content: center;
     text-align: center;
     margin-top: 10rem;
-    /* margin-bottom: 10rem; */
+    margin-bottom: 40rem;
     margin-left: 33%;
     height: 100%;
     background-color: var(--main-color);
@@ -147,6 +147,7 @@ footer {
     margin-top: 10rem;
     /* margin-bottom: 20rem; */
     margin-left: 33%;
+    margin-bottom: 40rem;
     height: auto;
     background-color: var(--main-color);
     border-color: black;
@@ -157,7 +158,7 @@ footer {
 @media screen and (max-width: 768px) {
     *{
         max-width: 100%;
-        font-size: smaller;
+        font-size: auto;
         }
     
     img{
@@ -170,7 +171,7 @@ footer {
     *{
         /* nav {position: relative;} */
         max-width: 100%;
-        font-size: small;
+        font-size: auto;
     }
 
     img{
