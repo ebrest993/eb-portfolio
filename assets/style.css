@@ -1,7 +1,6 @@
 :root {
     --main-color: rgb(137, 90, 3);
     --second-color: darkcyan;
-    --gradient: linear-gradient(maroon,orange)
 }
 
 html {
@@ -120,8 +119,6 @@ aside {
     
 footer {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 100%;
-    text-align: center;
     display: inline-block;
     width: 33%;
     justify-content: center;
